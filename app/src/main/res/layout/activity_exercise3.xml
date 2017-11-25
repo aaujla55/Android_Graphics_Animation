@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ButtonRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ButtonStart"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="Start" >
+
+        </Button>
+
+        <Button
+            android:id="@+id/ButtonStop"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="Stop" >
+
+        </Button>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/galaxy">
+
+        <ImageView
+            android:id="@+id/moon"
+            android:layout_width="111dp"
+            android:layout_height="85dp"
+            android:layout_alignLeft="@+id/earth"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/earth"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:foregroundGravity="center_horizontal"
+            android:src="@drawable/moon">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/earth"
+            android:layout_width="157dp"
+            android:layout_height="162dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/earth">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
